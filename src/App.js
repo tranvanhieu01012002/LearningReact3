@@ -1,11 +1,15 @@
 
 import './App.css';
-import Form from './Component/Form/Form';
+// import CheckBox from './Component/Content/SelectDrink/CheckBox';
+import FormSelectDrink from './Component/Content/SelectDrink/FormSelectDrink';
+
 
 function App() {
   return (
       <>
-        <Form></Form>
+        {/* <Form></Form> */}
+        {/* <CheckBox></CheckBox> */}
+        <FormSelectDrink></FormSelectDrink>
       </>
   );
 }
