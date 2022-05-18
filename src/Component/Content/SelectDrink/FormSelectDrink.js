@@ -22,15 +22,17 @@ export default function FormSelectDrink() {
       
        
     }
-    console.log(price);
     const handleOnChange = event => {
         setPrice(event.target.value);
       };
     const sHandle = (e)=>{
         e.preventDefault()
+
        parseInt(price)>=total
        ?
-       alert("chúc mừng bạn vừa mua được "+state.map(item=>data.filter(itemData=>itemData.id===item).map(item1=><p>{item1.name}</p>)))
+    //    console.log(state.map())
+      
+       alert("chúc mừng bạn vừa mua được "+ state.map(item =>data.filter(ele=>ele.id===parseInt(item)).map(item1=><p>{item1.name}</p>)))
        :
        alert("chúc mừng bạn vừa mua trượt sản phẩm")
     }
